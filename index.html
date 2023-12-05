@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6561b4fbda19b3621790a2d0/1hg2qlu2j';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <title>Salitex</title>
+</head>
+<style>
+    .w3rcontainer {
+        border: 1px solid #cccfdb;
+        border-radius: 2px;
+    }
+
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: rgb(5, 5, 5);
+    }
+
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #353030;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .img-w {
+        width: 150px;
+        background-color: rgb(27, 25, 25);
+        border-radius: 50% 50% 3% 50%;
+        margin-top: 40px;
+        padding-bottom: 15px;
+    }
+
+    .card-item {
+        transition: transform .3s ease-in-out;
+    }
+
+    .card-item:hover {
+        cursor: pointer;
+        transform: translateY(-20px)
+    }
+
+
+
+    .slider {
+        height: 500px;
+        margin: auto;
+        position: relative;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+
+    .slide-track {
+        display: flex;
+        width: calc(250px * 18);
+        animation: scroll 40s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 9));
+        }
+    }
+
+    .slide {
+        height: 200px;
+        width: 950px;
+        display: flex;
+        align-items: center;
+        perspective: 100px;
+        margin-left: 50px;
+    }
+
+    .slide-img {
+        width: 950px;
+        height: 400px;
+        transition: transform 1s;
+    }
+
+    .slide-img:hover {
+        transform: translateZ(20px);
+    }
+
+    .slider::before,
+    .slider::after {
+        content: '';
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .slider::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+
+    .dropbtn {
+        color: black;
+        padding: 5px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        width: 800px;
+        height: 350px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: white;
+    }
+
+
+    .shadow-img {
+        transition: 1s ease;
+    }
+
+    .shadow-img:hover {
+        border-radius: 50%;
+        transition: 1s ease;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 1s ease;
+    }
+</style>
+
+<body>
+
+    <!-- pre-nav-section -->
+
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 bg-black d-flex">
+                <i class="bi hover:translate-y-1 hover:cursor-pointer text-white ml-3 text-2xl bi-facebook"></i>
+                <i class="bi hover:translate-y-1 hover:cursor-pointer text-white ml-3 text-2xl bi-instagram"></i>
+                <i class="bi hover:translate-y-1 hover:cursor-pointer text-white ml-3 text-2xl bi-whatsapp"></i>
+                <i class="bi hover:translate-y-1 hover:cursor-pointer text-white ml-3 mr-8 text-3xl bi-youtube"></i>
+                <marquee behavior="anonymous" direction="row">
+                    <p class="text-white font-sans pt-2">World Wide Delivery</p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-gray-100">
+
+        <!-- navbar-section -->
+
+        <nav class="sticky-top">
+            <div class="container-fluid bg-gray-100">
+                <div class="row">
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="col-2 pt-3 pl-10 sm-12 md-6 lg-2 xl-2">
+                        <img class="" src="./images/logo.png" alt="">
+                    </div>
+                    <div class="col-7">
+                        <ul class="flex">
+                            <li class="ml-20 pt-2 text-black">
+                                <a class="hover-underline-animation hover:text-purple-950 font-semibold"
+                                    href="./index.html">Home</a>
+                            </li>
+                            <li class="ml-7 pt-2 text-black">
+                                <a class="hover-underline-animation hover:text-purple-950" href="./page2.html">11.11
+                                    Sale</a>
+                            </li>
+                            <li class="ml-7 pt-2 text-black">
+                                <a class="hover-underline-animation hover:text-purple-950" href="./page3.html">New
+                                    Arrivals</a>
+                            </li>
+                            <div class="dropdown">
+                                <div class="flex">
+                                    <button class="hover-underline-animation dropbtn mt-1 ml-2">Unstitched</button>
+                                </div>
+                                <div class="dropdown-content">
+                                    <div class="container">
+                                        <div class="row mt-3">
+                                            <div class="col">
+                                                <p class="font-bold text-lg">Shop By Pieces</p>
+                                                <p class="mt-3">1Pc <br>
+                                                    Gul-E-Bahar <br>
+                                                    Sana Sara Chiffon <br>
+                                                    Kiara <br>
+                                                    Rukhsaar <br>
+                                                    Ahaana <br>
+                                                    Noor-E-Khaas <br>
+                                                    Dastan <br>
+                                                    Roshni <br>
+                                                    Oznur Mukesh <br>
+                                                    Vogue <br>
+                                                    Mehr Printed Series <br>
+                                                </p>
+
+                                            </div>
+                                            <div class="col">
+                                                <p class="font-bold text-lg">Shop By Fabric</p>
+                                                <p class="mt-3">Lown <br>
+                                                    Jacquard Shawl <br>
+                                                    Stoles <br>
+                                                    Izhaar <br>
+                                                    Aura <br>
+                                                    Nermin <br>
+                                                    Aghaaz <br>
+                                                    Sehr <br>
+                                                    Humnah <br>
+                                                    Eid Dastan <br>
+                                                    Tabeer <br>
+                                                    Nirvana
+                                                </p>
+
+                                            </div>
+                                            <div class="col">
+                                                <p class="font-bold text-lg">Shop By Type</p>
+                                                <p class="mt-3">Printed <br>
+                                                    Oriana <br>
+                                                    Riwayat <br>
+                                                    Mehr-e-Gul <br>
+                                                    Malabis <br>
+                                                    Pairahan <br>
+                                                    Chikankari <br>
+                                                    Dastak - Luxury Chiffon <br>
+                                                    Estela <br>
+                                                    Retro <br>
+                                                    Khaddar <br>
+                                                    Linen <br>
+                                                </p>
+
+                                            </div>
+                                            <div class="col">
+                                                <p class="font-bold text-lg">Shop By Type</p>
+                                                <p class=" mt-3">
+                                                    Eliora <br>
+                                                    Gul-E-Noor <br>
+                                                    Mina <br>
+                                                    Arza <br>
+                                                    Bagh <br>
+                                                    Elayne <br>
+                                                    Roha <br>
+                                                    Nora <br>
+                                                    Izna <br>
+                                                    Ayra <br>
+                                                    Emal <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle ml-3 text-black hover:text-purple-950" href="#"
+                                        id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Stitched
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark"
+                                        aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <li class="ml-5 pt-2 text-black">
+                                <a class="hover-underline-animation hover:text-purple-950" href="">Best Sallers</a>
+                            </li>
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle ml-5 text-black hover:text-purple-950" href="#"
+                                        id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Winter 23
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark"
+                                        aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Unstitched</a></li>
+                                        <li><a class="dropdown-item" href="#">Stitched</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                        <div class="row">
+                            <div class="col-2 flex">
+                                <div class="dropdown ml-80">
+                                    <div class="flex">
+                                        <button class="dropbtn hover-underline-animation">Collection</button>
+                                        <i class="bi mt-2 mr-4 text-xs bi-caret-down-fill"></i>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <div class="container">
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <p class="font-bold text-lg">Shop By Pieces</p>
+                                                    <p class="mt-3">1Pc</p>
+                                                    <p>2Pc</p>
+                                                    <p>3Pc</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="font-bold text-lg">Shop By Fabric</p>
+                                                    <p class="mt-3">Lown</p>
+                                                    <p>Cotton</p>
+                                                    <p>Cabric</p>
+                                                    <p>Khadar</p>
+                                                    <p>Jacuard</p>
+                                                    <p>Chiffon</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="font-bold text-lg">Shop By Type</p>
+                                                    <p class="mt-3">Printed</p>
+                                                    <p>Embroided</p>
+                                                    <p>Solid</p>
+                                                    <p>Fusion</p>
+                                                </div>
+                                                <div class="col mt-4">
+                                                    <img src="./images/dropimg1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown">
+                                    <div class="flex">
+                                        <button class="dropbtn hover-underline-animation">Accessories</button>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <div class="container">
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <p class="font-bold text-lg">Shop By Pieces</p>
+                                                    <p class="mt-3">1Pc</p>
+                                                    <p>2Pc</p>
+                                                    <p>3Pc</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="font-bold text-lg">Shop By Fabric</p>
+                                                    <p class="mt-3">Lown</p>
+                                                    <p>Cotton</p>
+                                                    <p>Cabric</p>
+                                                    <p>Khadar</p>
+                                                    <p>Jacuard</p>
+                                                    <p>Chiffon</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="font-bold text-lg">Shop By Type</p>
+                                                    <p class="mt-3">Printed</p>
+                                                    <p>Embroided</p>
+                                                    <p>Solid</p>
+                                                    <p>Fusion</p>
+                                                </div>
+                                                <div class="col mt-4">
+                                                    <img src="./images/dropimg.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <ul class="flex ml-14">
+                            <li class="text-black mr-2 pt-[28px]">
+                                <a href=""><i class="bi bi-search-heart mr-2"></i>Search</a>
+                            </li>
+                            <li class=" text-black ml-4 pt-4">
+                                <a class="text-base" href="./form.html"><i
+                                        class="bi bi-person text-xl mr-1"></i>Account</a>
+                            </li>
+                            <li class="text-black ml-6 pt-6">
+                                <a href=""><i class="bi bi-bag-heart text-xl mr-1"></i>0</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+
+        <!-- banner-section -->
+
+        <div class="container-flex">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/banner.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- shop bt collection (2nd section) -->
+
+        <div class="container-fluid bg-gray-100">
+            <div class=" ">
+                <p class="font-bold text-5xl text-center mt-8 text-pink-900">Top Picks</p>
+                <div class="row">
+                    <div class="col card-item">
+                        <img src="./image/WhatsApp Image 2023-11-24 at 2.45.42 PM (1).jpeg" class="img-w" alt="">
+                    </div>
+
+
+                    <div class="col card-item">
+                        <img src="./image/WhatsApp Image 2023-11-24 at 2.45.42 PM (2).jpeg" class="img-w" alt="">
+                    </div>
+
+                    <div class="col card-item">
+                        <img src="./image/WhatsApp Image 2023-11-24 at 2.45.42 PM.jpeg" class="img-w " alt="">
+                    </div>
+                    <div class="col card-item">
+                        <img src="./image/WhatsApp Image 2023-11-24 at 2.45.43 PM.jpeg" class="img-w" alt="">
+                    </div>
+                    <div class="col card-item">
+                        <img src="./image/WhatsApp Image 2023-11-24 at 2.45.42 PM (1).jpeg" class="img-w" alt="">
+                    </div>
+                    <div class="col card-item">
+                        <img src="./image/WhatsApp Image 2023-11-24 at 2.45.42 PM (2).jpeg" class="img-w" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+        </div> <br><br>
+
+        <!-- banner-section -->
+
+        <div class="container-fluid bg-gray-100">
+            <div class="row">
+                <div data-aos="flip-left" class="col-3">
+                    <img src="./images/WomenSweater.png" alt=""> <br>
+                    <img src="./images/prfume.png" alt="">
+                </div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="col-6">
+                    <img src="./images/sale.png" alt="">
+                </div>
+                <div data-aos="flip-right" class="col-3">
+                    <img src="./images/menwear.png" alt=""> <br>
+                    <img src="./images/mensweter.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- image-cards-section -->
+
+        <p class="text-center text-pink-900 font-bold text-5xl mt-5">Best Saller</p>
+        <div class="container flex mt-10 justify-evenly bg-gray-100">
+            <div class="row">
+                <div data-aos="fade-up" data-aos-duration="3000"
+                    class="col w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg" src="./images/carrd2.png" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Awesome
+                                Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900 dark:text-white">$29</span>
+                            <button class="text-pink-900 text-xl font-bold hover-underline-animation">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                    class="col w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg" src="./images/card1.png" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Classy Series
+                                7 GPS, Aluminium Case, Starlight Sport</h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900 dark:text-white">$39</span>
+                            <button class="text-pink-900 text-xl font-bold hover-underline-animation">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-aos="fade-up" data-aos-duration="3000"
+                    class="col w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg" src="./images/card3.png" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">A1 Series 7
+                                GPS, Aluminium Case, Starlight Sport</h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900 dark:text-white">$59</span>
+                            <button class="text-pink-900 text-xl font-bold hover-underline-animation">Add to
+                                cart</button>
+                            <!-- <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                    class="col w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg" src="./images/card4.png" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Luxery Series
+                                7 GPS, Aluminium Case, Starlight Sport</h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900 dark:text-white">$49</span>
+                            <button class="text-pink-900 text-xl font-bold hover-underline-animation">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- image-banner-section-3 -->
+
+        <div class="container mt-20 bg-gray-100">
+            <div class="row">
+                <div class="col-3 mt-4">
+                    <img class="rounded-lg hover:opacity-60 hover:cursor-pointer" src="./images/ban3.png" alt=""> <br>
+                    <img class="rounded-lg hover:opacity-60 hover:cursor-pointer" src="./images/ban2.png" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="rounded-lg hover:opacity-50 hover:cursor-pointer" src="./images/bigban1.png" alt="">
+                </div>
+                <div class="col-3 mt-4">
+                    <img class="rounded-lg hover:opacity-60 hover:cursor-pointer" src="./images/ban2.png" alt=""> <br>
+                    <img class="rounded-lg hover:opacity-60 hover:cursor-pointer" src="./images/ban3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- button -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button type="button"
+                        class="text-gray-900 bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm mt-8 w-[500px] px-5 py-2.5 text-center me-2 mb-2">Explore
+                        More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- video-section -->
+
+        <div class="container bg-gray-100">
+            <div class="row">
+                <div class="col-12">
+                    <video class="w-[100%] mt-10" controls autoplay loop>
+                        <source src="./images/video.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- New-arrival-section -->
+
+        <div class="container mt-10 bg-gray-100">
+            <p class="text-center font-bold text-5xl mb-5 text-pink-900">New Arrivals</p>
+            <div class="row">
+                <div class="col-5 row-span-2 ml-3 flex ">
+                    <img class="shadow-img" src="./images/bottomcard11.png" alt="">
+                    <div class="col-span-7 row-span-2 mt-10">
+                        <p class=" mt-80 ml-72 text-4xl font-bold underline">NewCollection</p>
+                        <p class="ml-64 mt-2 text-gray-600 text-2xl font-semibold">
+                            Now&nbsp;Dress&nbsp;Bright&nbsp;And&nbsp;Lively</p>
+                        <p class="ml-52 mt-2 text-2xl font-bold">
+                            With&nbsp;Our&nbsp;Youngest&nbsp;And&nbsp;Bright&nbsp;Collection</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img class=" shadow-img mt-3 ml-3 " src="./images/kd1.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="shadow-img ml-5 mt-3" src="./images/kd2.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="shadow-img ml-5 mt-3" src="./images/teenboy (1).png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- auto-move-slider-section -->
+
+        <div class="container main-slider bg-gray-100">
+            <div class="tranding-wear">
+                <p class="text-2xl text-center text-pink-900 font-semibold mt-5">#iwearSalitex</p>
+                <p class="text-5xl text-center text-black font-semibold mt-2">Celebrity Spotted</p>
+                <div class="row slider">
+                    <div class="col slide-track">
+                        <div class="slide">
+                            <img class="slide-img" src="./images/aa.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/bb.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/cc.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/dd.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/ee.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/ff.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/gg.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/aa.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/bb.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/cc.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/dd.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/ee.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/ff.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="./images/gg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- join our family section -->
+
+        <div class="container bg-gray-100">
+            <div class="row">
+                <div class="col">
+                    <p class="text-5xl text-black font-bold text-center">join our family</p>
+                </div>
+                <div class="row">
+                    <div class="col flex">
+                        <p class="ml-80 text-black mt-3">Want our exclusive gifts and insider news about our products?
+                        </p>
+                        <p class="font-bold mt-3"> Join our family now !</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="w-60 ml-[440px] mt-3 border-2 border-gray-700 h-11 " type="text"
+                            placeholder="Enter">
+                        <button class="border-2 h-12 bg-black text-white font-semibold w-32">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pre.footer-section -->
+
+        <div class="container-fluid bg-black text-white mt-20 ">
+            <div class="row">
+                <div class="col ml-20">
+                    <span class="flex"><img class="w-20 mt-4" src="./images/WORLD_WIDE_DELIVERY-white.avif" alt="">
+                        <p class="font-bold mt-10">Worldwide Delivery <br> 7-15 Working Days</p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="flex"><img class="w-20 mt-4" src="./images/CUSTOMER_SUPPORT-white.avif" alt="">
+                        <p class="font-bold mt-10">Worldwide Delivery <br> 7-15 Working Days</p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="flex"><img class="w-20 mt-4" src="./images/RETURN_EXCHANGE-white.avif" alt="">
+                        <p class="font-bold mt-10">Worldwide Delivery <br> 7-15 Working Days</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- fotter -->
+
+    <div class="container mt-12 font-sans">
+        <div class="row">
+            <div class="col">
+                <!-- Footer -->
+                <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+                    <!-- Section: Social media -->
+                    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                        <!-- Left -->
+                        <div class="me-5 d-none d-lg-block text-gray-700">
+                            <span>Get connected with us on social networks:</span>
+                        </div>
+                        <!-- Left -->
+
+                        <!-- Right -->
+                        <div class="">
+                            <a class="text-3xl mr-4 text-blue-950" href="" class="me-4 text-reset">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a class="text-3xl mr-5 text-blue-600" href="" class="me-4 text-reset">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a class="text-3xl mr-5 text-orange-500" href="" class="me-4 text-reset">
+                                <i class="bi bi-google"></i>
+                            </a>
+                            <a class="text-3xl mr-5 text-red-700" href="" class="me-4 text-reset">
+                                <i class="bi bi-instagram"></i>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                        </div>
+                        <!-- Right -->
+                    </section>
+                    <!-- Section: Social media -->
+
+                    <!-- Section: Links  -->
+                    <section class="">
+                        <div class="container text-center text-md-start mt-5">
+                            <!-- Grid row -->
+                            <div class="row mt-3">
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <!-- Content -->
+                                    <h6 class="mb-4">
+                                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                            data-aos-duration="2000"><img src="./images/logo.png" alt=""></div>
+                                    </h6>
+                                    <p class="text-pink-900">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero atque facilis
+                                        est labore, doloribus quo.
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold text-pink-800 mb-4">
+                                        Products
+                                    </h6>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">Angular</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">React</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">Vue</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">Laravel</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase font-bold text-pink-800 mb-4">
+                                        Useful links
+                                    </h6>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">Pricing</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">Services</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">Blog</a>
+                                    </p>
+                                    <p>
+                                        <a class="text-black" href="#!" class="text-reset">Contact</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold text-pink-800 mb-4">Contact</h6>
+                                    <p class="text-lg text-black"><i class="bi text-green-700 bi-house-fill"></i>&emsp;
+                                        New York, NY 10012, US</p>
+                                    <p class="text-lg text-black">
+                                        <i class="bi text-pink-800 bi-envelope-fill"></i>&emsp;
+                                        info@example.com
+                                    </p>
+                                    <p class="text-lg text-black"><i
+                                            class="bi text-blue-900 bi-telephone-fill"></i>&emsp; + 01 234 567 88</p>
+                                    <p class="text-lg text-black"><i class="fas fa-print me-3"></i>&emsp; + 01 234 567
+                                        89</p>
+                                </div>
+                                <!-- Grid column -->
+                            </div>
+                            <!-- Grid row -->
+                        </div>
+                    </section>
+                    <!-- Section: Links  -->
+
+                    <!-- Copyright -->
+                    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                        © 2021 Copyright:cyber safe evonicmedia. all rights reserved.
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
